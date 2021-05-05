@@ -1,0 +1,501 @@
+/* 13インチ向けレイアウト */
+@media sceeen and (min-width: 1200px) {
+
+  @keyframes fade-in5 {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 30px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fade-in1 {
+    0% {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  header {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .top-container {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-color: #feffdf;
+    margin-top: 40px;
+  }
+  
+  .top-left {
+    margin-top: 30px;
+
+    animation-name: fade-in5;
+    animation-duration: 4s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+  
+  }
+  
+  .top-book {
+    float: left;
+  }
+  
+  .top-boad {
+    float: right;
+  }
+  
+  .top-img img {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+    box-shadow: 8px 8px 4px gray;
+    user-select: none;
+
+    animation-name: fade-in5;
+    animation-duration: 4s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+    
+  }
+  
+  .self-content {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    width: 760px;
+    background-color: #ffa952;
+    padding: 20px 40px;
+    border-radius: 5%;
+    box-shadow: 8px 8px 4px gray;
+
+    animation-name: fade-in1;
+    animation-duration: 4s; 
+    animation-timing-function: ease-in; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+  
+  }
+  
+  .self-tag{
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: yellow;
+  }
+  
+  .self-content p {
+    padding-left: 40px;
+  }
+  
+  
+  .top-book {
+    display: block;
+    float: left;
+    margin: 40px 40px;
+    margin-right: 40px;
+  }
+  
+  .top-book {
+    position: relative;
+    cursor: pointer;
+  
+  }
+  
+  .top-boad {
+    position: relative;
+  }
+  
+  .top-book img {
+    display: block;
+    margin-right: 20px;
+    border-radius: 3%;
+    height: 150px;
+    width: 250px;
+    box-shadow: 8px 8px 4px gray;
+    
+  }
+  
+  .top-book p {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  .top-book a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .top-book a:hover{
+    color: #5983ff;
+    transition: color .3s;
+  }
+  
+  
+  .top-boad img {
+    display: block;
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-radius: 3%;
+    width: 250px;
+    height: 150px;
+    box-shadow: 8px 8px 4px gray;
+    cursor: pointer;
+  }
+  
+  .top-boad p {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .top-boad a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .top-boad a:hover{
+    color: #5983ff;
+    transition: color .3s;
+  }
+
+
+  /* メニューリスト */
+
+  .menu-list {
+    display: flex;
+    margin-top: -20px;
+    height: 600px;
+    width: 100%;
+    background-image: url("./img/reflection-2237981_1920.jpg");
+  }
+
+  .menu-title {
+    height: 60px;
+    width: 500px;
+    margin-top: 40px;
+    opacity: 0.8;
+    background-color: rgba(255, 217, 0, 0.897);
+  }
+
+  .menu-title h2 {
+    text-align: start;
+    margin-top: -5px;
+    padding: -10px;
+  }
+
+  .menu-lists {
+    color: white;
+    margin-left: 150px;
+    height: 100px;
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 50%);
+
+  }
+  
+  .menu-list li {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+
+
+  a {
+    color: whitesmoke; 
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+  footer {
+    text-align: center;
+    height: 40px;
+    padding-top: 15px;
+  }
+
+}
+
+/* スマホ向けレイアウト */
+@media screen and (max-width: 500px) {
+  @keyframes fade-in5 {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 30px, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fade-in1 {
+    0% {
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  header {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .header-menu{
+    display: none;
+  }
+
+  .header-menu-right{
+    display: none;
+  }
+
+  .header-title img {
+    width: 150px;
+    height: 50px;
+  }
+  
+
+  .top-container {
+    height: auto;
+    background-color: #feffdf;
+    margin-top: 40px;
+    flex-direction:column;
+  }
+  
+  .top-left {
+    margin-top: 30px;
+
+    animation-name: fade-in5;
+    animation-duration: 4s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+  
+  }
+  
+  
+  .top-img img {
+    display: block;
+    text-align: center;
+    margin-left: 100px;
+    width: 200px;
+    border-radius: 5%;
+    box-shadow: 8px 8px 4px gray;
+    user-select: none;
+
+    animation-name: fade-in5;
+    animation-duration: 4s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+    
+  }
+  
+  .self-content {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+    width: 90%;
+    background-color: #ffa952;
+    padding: 20px 10px;
+    border-radius: 5%;
+    box-shadow: 8px 8px 4px gray;
+
+    animation-name: fade-in1;
+    animation-duration: 4s; 
+    animation-timing-function: ease-in; 
+    animation-delay: 0s; 
+    animation-iteration-count: 1; 
+    animation-direction: normal; 
+    animation-fill-mode: forwards; 
+  
+  }
+  
+  .self-tag{
+    padding-bottom: 20px;
+    font-weight: bold;
+    color: yellow;
+  }
+  
+  .self-content p {
+    padding-left: 40px;
+  }
+  
+  
+  .top-book {
+    display: block;
+    float: left;
+    margin: 40px 40px;
+    margin-right: 40px;
+  }
+  
+  .top-book {
+    position: relative;
+    cursor: pointer;
+  
+  }
+  
+  .top-boad {
+    position: relative;
+  }
+  
+  .top-book img {
+    display: block;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 100px;
+    border-radius: 3%;
+    height: 150px;
+    width: 250px;
+    box-shadow: 8px 8px 4px gray;
+    
+  }
+  
+  .top-book p {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    user-select: none;
+  }
+
+  .top-book a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .top-book a:hover{
+    color: #5983ff;
+    transition: color .3s;
+  }
+  
+  
+  .top-boad img {
+    display: block;
+    margin-top: 40px;
+    margin-right: 110px;
+    border-radius: 3%;
+    width: 250px;
+    height: 150px;
+    box-shadow: 8px 8px 4px gray;
+    cursor: pointer;
+  }
+  
+  .top-boad p {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .top-boad a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .top-boad a:hover{
+    color: #5983ff;
+    transition: color .3s;
+  }
+
+
+  /* メニューリスト */
+
+  .menu-list {
+    display: flex;
+    margin-top: -20px;
+    height: 600px;
+    width: 100%;
+    background-image: url("./img/reflection-2237981_1920.jpg");
+  }
+
+  .menu-title {
+    height: 60px;
+    width: 30%;
+    margin-top: 40px;
+    opacity: 0.8;
+    background-color: rgba(255, 217, 0, 0.897);
+  }
+
+  .menu-title h2 {
+    text-align: start;
+    margin-top: -5px;
+    padding: -10px;
+  }
+
+  .menu-lists {
+    display: block;
+    color: white;
+    margin-left: 15px;
+    height: 100px;
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+  }
+  
+  .menu-list li {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+
+
+  a {
+    color: whitesmoke; 
+  }
+
+  a:hover {
+    color: yellow;
+  }
+
+  footer {
+    text-align: center;
+    height: 40px;
+    padding-top: 15px;
+  }  
+
+}
